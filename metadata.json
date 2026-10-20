@@ -1,0 +1,6 @@
+{
+  "name": "ZapDisparador - Envio em Massa WhatsApp",
+  "description": "Aplicativo web full-stack para envio automatizado e seguro de mensagens para múltiplos contatos do WhatsApp com Baileys.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edna Marques - Envio de Mensagens no WhatsApp</title>
+    <meta name="description" content="Edna Marques - Sistema de envio de mensagens para múltiplos contatos do WhatsApp com intervalo seguro." />
+    <meta property="og:title" content="Edna Marques - Envio de Mensagens no WhatsApp" />
+    <meta property="og:description" content="Edna Marques - Sistema de envio de mensagens para múltiplos contatos do WhatsApp com intervalo seguro." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Ignora erros de WebSocket decorrentes de HMR desativado no ambiente de iframe
+      window.addEventListener('error', function(e) {
+        if (e.filename && e.filename.indexOf('@vite/client') !== -1) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var msg = e.reason ? (e.reason.message || String(e.reason)) : '';
+        if (msg.indexOf('WebSocket') !== -1 || (e.reason && e.reason.stack && e.reason.stack.indexOf('@vite/client') !== -1)) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
